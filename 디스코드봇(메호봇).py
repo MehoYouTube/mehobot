@@ -1,5 +1,5 @@
 import discord
-
+import os
 import asyncio
 
 
@@ -64,4 +64,5 @@ async def on_message(message):
 
         await client.send_message(message.channel, "1.ㅎㅇ  2.인사 3.따까리인사해봐 4.!제작자 5.!제작자유튜브 6.!명령어목록 7.(추후명령어는추가될수있습니다)")
 
-client.run('NTQ3NjY3NjM5OTA4OTU4MjQz.D06HPA.alpCLcb6d-KEi3zwFcSr0zU51y0')
+access_token = ps.environ["BOT_TOKEN"]        
+client.run('access_token')
